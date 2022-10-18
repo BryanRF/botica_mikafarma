@@ -15,15 +15,11 @@ Public Class Categoria
     End Function
 
 
-
-
-
     Public Sub CD_InsertarCategoria(CEDatos As cat)
         Dim cmd As New SqlCommand("[dbo].[Set_Insertar_categeria]", conn)
         conn.Open()
         cmd.CommandType = CommandType.StoredProcedure
         cmd.Parameters.AddWithValue("nombre", CEDatos.nombre)
-
         cmd.ExecuteNonQuery()
         cmd.Parameters.Clear()
         conn.Close()

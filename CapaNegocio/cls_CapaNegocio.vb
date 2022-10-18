@@ -43,7 +43,7 @@ Public Class cls_CapaNegocio
         objetoDatosCLiente.CD_InsertarCliente(CEDatos)
     End Sub
 
-    'goooooooooooooooooooooooooooo'
+    'oooooooooooooooooooooooooooo'
     Public Function CN_ListarUsuarios() As DataTable
         Return objetUsuarios.CD_ListarUsuarios
     End Function
@@ -55,5 +55,6 @@ Public Class cls_CapaNegocio
     Public Function CN_InsertarCategoria(CEDatos As cat)
         objetoCategoria.CD_InsertarCategoria(CEDatos)
     End Function
+
 
 End Class
